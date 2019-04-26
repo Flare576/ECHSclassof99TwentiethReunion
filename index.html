@@ -9,10 +9,49 @@
 <script>
 </script>
 <style type="text/css">
+  html, body {
+    height: 100%;
+  }
+  .main {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100%;
+  }
+  
+  .left, .right {
+    flex: 1 1 10%;
+    background: repeating-linear-gradient(
+      45deg,
+      #7aa7ef,
+      #7aa7ef 30px,
+      #949daa 30px,
+      #949daa 60px
+    );
+  }
+  
+  .content {
+    max-width: 750px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0 10px;
+  }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 <body>
-Hello world
+<div class="main">
+  <div class="left"></div>
+  <div class="content">
+    <img src="headerImage.jpg" />
+    <div class="information">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia nibh et augue efficitur faucibus. In nec lectus in nulla suscipit sollicitudin. Donec quis viverra odio. Fusce in justo non lectus faucibus sodales sodales id metus. Vivamus congue, magna sed sagittis maximus, velit quam tristique erat, tincidunt venenatis risus erat a massa. Fusce rhoncus ultricies tellus in ullamcorper. Quisque turpis orci, hendrerit ut luctus nec, ornare at nulla. Aliquam blandit condimentum turpis, eget egestas ex. Cras efficitur dignissim dapibus. Mauris justo arcu, consequat nec semper vitae, venenatis in erat. Aliquam semper auctor ante, eu aliquet turpis vulputate quis. Aenean sit amet placerat elit. Sed in gravida elit. Sed ac maximus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse orci magna, fermentum ac orci vel, ultrices molestie lacus.
+
+  Morbi sit amet nulla at libero congue tincidunt. Phasellus vitae mi imperdiet, faucibus ipsum a, feugiat diam. Phasellus eleifend tellus tempus orci euismod pulvinar. In hac habitasse platea dictumst. Integer sodales ullamcorper volutpat. Duis imperdiet ut ex in tempus. Ut nec magna varius, egestas urna nec, sagittis arcu. Praesent sit amet orci rhoncus, malesuada eros ut, tincidunt mauris. Integer molestie neque nulla, suscipit convallis diam porta ac. Mauris eu aliquam urna. In pulvinar vel sapien a interdum. Etiam fringilla ut risus non efficitur. Vivamus sit amet urna venenatis, ullamcorper felis posuere, porta neque. Quisque ut ex nulla.
+    </div>
+  </div>
+  <div class="right"></div>
+</div>
 </body>
 </html>
