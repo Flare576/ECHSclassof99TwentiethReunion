@@ -13,13 +13,13 @@
     height: 100%;
     font-family: "Open Sans";
     background-color: #c7c8c8;
+    text-align: center; 
   }
 
   .main {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    height: 100%;
   }
   
   .left, .right {
@@ -50,8 +50,8 @@
     align-self: center;
   }
 
-  .payment-link {
-    display: block;
+  .cta-link {
+    display: inline-block;
     cursor: pointer;
     background-color: #0070ba;
     color: white;
@@ -60,19 +60,14 @@
     text-decoration: none;
   }
 
-  .payment-link:hover {
+  .cta-link:hover {
     background-color: #003087;
   }
 
   .event-name {
     font-size: 1.5em;
     text-decoration: underline;
-    text-align: center;
     margin-top: 20px;
-  }
-
-  .date-time {
-    text-align: center;
   }
 
   .date {
@@ -84,18 +79,24 @@
     font-style: italic;
   }
 
-  .location {
-    text-align: center;
-  }
-  
   .school-logo {
     width: 100%;
     flex-shrink: 0;
   }
 
-  .call-to-action {
+  .footer {
     margin-top: 20px;
-    text-align: center; 
+  }
+
+  .ctas {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .ctas div {
+    flex: 0 1 45%;
   }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -151,12 +152,25 @@
           </div>
         </div>
       </div>
-      <div class="payment">
-        <a href="https://www.paypal.com/pools/c/8eixkj6u8b" class="payment-link">
-          Contribute To Event
-        </a>
+      <div class="ctas">
+        <div>
+          <div>
+            Will we be seeing you in August?
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScwE3WejwgRBlNhHt-fad6nms0OTGIW7jp6sO6-IklKPc4wlg/viewform?usp=sf_link" class="cta-link">
+            RSVP
+          </a>
+        </div>
+        <div>
+          <div>
+            Reserve and pay for your meal(s)
+          </div>
+          <a href="https://www.paypal.com/pools/c/8eixkj6u8b" class="cta-link">
+            Reserve
+          </a>
+        </div>
       </div>
-      <div class="call-to-action">
+      <div class="footer">
         <div>
           *** Check back every Saturday for the most up-to-date information! ***
         </div>
