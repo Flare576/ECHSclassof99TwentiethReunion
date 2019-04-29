@@ -39,6 +39,48 @@
     align-items: center;
     padding: 0 10px;
   }
+
+  .header {
+    font-size: 1.75em;
+  }
+  
+  .payment {
+    align-self: center;
+  }
+
+  .payment-link {
+    display: block;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+
+  .event-name {
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .date-time {
+    text-align: center;
+  }
+
+  .date {
+    font-weight: bold;
+  }
+
+  .location:before {
+    content: "~~~~ AT ~~~~";
+    font-style: italic;
+  }
+
+  .location {
+    text-align: center;
+  }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
@@ -47,11 +89,57 @@
   <div class="left"></div>
   <div class="content">
     <img src="headerImage.jpg" />
-    <div class="information">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia nibh et augue efficitur faucibus. In nec lectus in nulla suscipit sollicitudin. Donec quis viverra odio. Fusce in justo non lectus faucibus sodales sodales id metus. Vivamus congue, magna sed sagittis maximus, velit quam tristique erat, tincidunt venenatis risus erat a massa. Fusce rhoncus ultricies tellus in ullamcorper. Quisque turpis orci, hendrerit ut luctus nec, ornare at nulla. Aliquam blandit condimentum turpis, eget egestas ex. Cras efficitur dignissim dapibus. Mauris justo arcu, consequat nec semper vitae, venenatis in erat. Aliquam semper auctor ante, eu aliquet turpis vulputate quis. Aenean sit amet placerat elit. Sed in gravida elit. Sed ac maximus turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse orci magna, fermentum ac orci vel, ultrices molestie lacus.
+      <div class="header">
+        East Center Class of 1999's 20th Year Reunion
+      </div>
+      <div>Join us on Saturday for the reunion (and Happy Hour!), and on Sunday for the family picnic!</div>
+      <div class="event-name">
+        Class Reunion
+      </div>
+      <div class="date-time">
+        <div class="date">
+          Sat, August 10, 2019
+        </div>
+        <div class="time">
+          6:00 PM – 9:00 PM CDT
+        </div>
+        <div class="time">
+          Happy Hour from 5:00 PM - 6:00 PM CDT
+        </div>
+      </div>
+      <div class="location">
+        <div class="address-line">
+          Tobies Restaurant & Bakery
+        </div>
+        <div class="address-line">
+          Big Kettle Room
+        </div>
+        <div class="address-line">
+          404 Fire Monument Road, Hinckley, MN 55037
+        </div>
+      </div>
 
-  Morbi sit amet nulla at libero congue tincidunt. Phasellus vitae mi imperdiet, faucibus ipsum a, feugiat diam. Phasellus eleifend tellus tempus orci euismod pulvinar. In hac habitasse platea dictumst. Integer sodales ullamcorper volutpat. Duis imperdiet ut ex in tempus. Ut nec magna varius, egestas urna nec, sagittis arcu. Praesent sit amet orci rhoncus, malesuada eros ut, tincidunt mauris. Integer molestie neque nulla, suscipit convallis diam porta ac. Mauris eu aliquam urna. In pulvinar vel sapien a interdum. Etiam fringilla ut risus non efficitur. Vivamus sit amet urna venenatis, ullamcorper felis posuere, porta neque. Quisque ut ex nulla.
-    </div>
+      <div class="event-name">
+        Family Picnic
+      </div>
+      <div class="date-time">
+        <div class="date">
+          Sunday, August, 11, 2019
+        </div>
+        <div class="time">
+          Noon - 2pm
+        </div>
+        <div class="location">
+          <div class="address-line">
+            Location to be determined
+          </div>
+        </div>
+      </div>
+      <div class="payment">
+        <a href="https://www.paypal.com/pools/c/8eixkj6u8b" class="payment-link">
+          Contribute To Event
+        </a>
+      </div>
   </div>
   <div class="right"></div>
 </div>
